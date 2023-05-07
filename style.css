@@ -34,17 +34,32 @@ body {
 p {
     font-size: 16px;
 }
+/** Header styling Begins **/
+.header{
+width: 375px;
+height: 172px;
+border: 1px solid red;
+background-image: url(/assets/images/bg-sidebar-mobile.svg);
+display: flex;
+justify-content: center;
+}
+.step-list-items{
+    width: 180px;
+    height: 33px;
+    /* border: 1px solid white; */
+/** Positioning **/
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
 
-
-
-
-
+}
+/** Header styling ends **/
 .step-list {
     width: 33px;
     height: 33px;
     /* White */
-    /* border: 1px solid #FFFFFF; */
-    border: 1px solid red;
+    border: 1px solid #FFFFFF;
+
     border-radius: 50%;
     /* Internal Text*/
     font-family: 'Ubuntu';
@@ -59,6 +74,7 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     list-style: none;
+    color: #FFFFFF;
 
 }
 
