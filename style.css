@@ -98,22 +98,21 @@ p {
 
 /* Go Back Button */
 .go-back-btn {
-    width: 53px;
-    height: 16px;
-}
+    max-width: 70px;
+    min-height: 26px;
+    text-align: center;
 
-.go-back-btn-text {
+/*inner text */
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     /* identical to box height */
-
-    /* Grey */
-
     color: #9699AA;
 }
+
+
 
 /** Toggle button **/
 .toggle-btn-main {
