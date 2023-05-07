@@ -1,60 +1,103 @@
-.step-list{
-width: 33px;
-height: 33px;
-/* White */
-/* border: 1px solid #FFFFFF; */
-border: 1px solid red;
-border-radius: 50%;
-/* Internal Text*/
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-letter-spacing: 1px;
-text-transform: uppercase;
-list-style: none;
+/*** Global Variables ***/
+:root {
+
+    /** Primary Colors **/
+    --Marine_blue: hsl(213, 96%, 18%);
+    --Purplish_blue: hsl(243, 100%, 62%);
+    --Pastel_blue: hsl(228, 100%, 84%);
+    --Light_blue: hsl(206, 94%, 87%);
+    --Strawberry_red: hsl(354, 84%, 57%);
+
+    /**  Neutral Colors **/
+
+    --Cool_gray: hsl(231, 11%, 63%);
+    --Light_gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+
+    /** Font  **/
+    @font-face {
+        font-family: Ubuntu;
+        src: url(https://fonts.google.com/specimen/Ubuntu);
+        Weights: 400, 500, 700;
+    }
 
 }
-.step-btn:hover{
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+p{
+    font-size: 16px;
+}
+
+
+
+
+
+.step-list {
+    width: 33px;
+    height: 33px;
+    /* White */
+    /* border: 1px solid #FFFFFF; */
+    border: 1px solid red;
+    border-radius: 50%;
+    /* Internal Text*/
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    list-style: none;
+
+}
+
+.step-btn:hover {
     /* Denim */
 
-color: #022959;
-/* Sky Blue */
+    color: #022959;
+    /* Sky Blue */
 
-background: #BEE2FD
+    background: #BEE2FD
 }
 
 /** Next Button **/
-.next-btn{
-width: 97px;
-height: 40px;
-background: #022959;
-border-radius: 4px;
+.next-btn {
+    width: 97px;
+    height: 40px;
+    background: #022959;
+    border-radius: 4px;
 }
-.next-btn-text{
-width: 65px;
-height: 16px;
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-/* White */
-color: #FFFFFF;
+
+.next-btn-text {
+    width: 65px;
+    height: 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    /* White */
+    color: #FFFFFF;
 }
 
 /* Go Back Button */
-.go-back-btn{
-width: 53px;
-height: 16px;
+.go-back-btn {
+    width: 53px;
+    height: 16px;
 }
-.go-back-btn-text{
+
+.go-back-btn-text {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -63,28 +106,30 @@ height: 16px;
     /* identical to box height */
 
     /* Grey */
-    
+
     color: #9699AA;
 }
+
 /** Toggle button **/
-.toggle-btn-main{
-width: 295px;
-height: 48px;
-/* Very Light Grey */
-background: #F8F9FF;
-border-radius: 8px;
-/* border: 1px solid black; */
-/*position */
-display: flex;
-justify-content: center;
-align-items: center;
+.toggle-btn-main {
+    width: 295px;
+    height: 48px;
+    /* Very Light Grey */
+    background: #F8F9FF;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+    /*position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.toggle-btn{
-width: 183px;
-height: 21px;
-/* border: 1px solid black; */
-display: flex;
-justify-content: space-around;
+
+.toggle-btn {
+    width: 183px;
+    height: 21px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
 }
 
 /** toggle switch **/
@@ -98,17 +143,17 @@ justify-content: space-around;
     height: 21px;
     /* border: 1px solid black; */
 
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -118,9 +163,9 @@ justify-content: space-around;
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 12px;
@@ -130,30 +175,30 @@ justify-content: space-around;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     /* background-color: #2196F3; */
     /* Denim */
-background-color: #022959;
-  }
-  
-  input:focus + .slider {
+    background-color: #022959;
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #022959;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
     /* border-radius: 34px; */
     border-radius: 10px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
