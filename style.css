@@ -145,6 +145,19 @@ box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
 
 /** Footer section Ends **/
 
+/** Middle Section starts **/
+.middle-section{
+width: 375px;
+height: 566px;
+border: 1px solid red;
+background-color: var(--Light_blue);
+}
+/** Middle Section Ends **/
+
+
+
+
+
 /** Toggle button **/
 .toggle-btn-main {
     width: 295px;
