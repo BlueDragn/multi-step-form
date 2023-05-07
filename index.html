@@ -27,7 +27,7 @@
 <body>
 
   <section class="main-container" id="main">
-<!------------------------Header Section Begins ------------------------>
+    <!------------------------Header Section Begins ------------------------>
     <section class="header" id="header-bar">
       <ul class="step-list-items">
         <li class="step-list">1</li>
@@ -36,7 +36,7 @@
         <li class="step-list">4</li>
       </ul>
     </section>
-<!------------------------Header Section Ends ---------------------------->
+    <!------------------------Header Section Ends ---------------------------->
 
     <!-- Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary -->
 
@@ -44,18 +44,7 @@
 
     <!-- Step 1 start -->
     <!-- <section class="personal-info" id="step-1">
-      <form class="form">
-        <h2>Personal info</h2>
-        <p>Please provide your name, email address, and phone number.</p>
 
-        <label for="name">Name</label>
-        <input type="text" placeholder="e.g. Stephen King" />
-        <label for="email">Email Address
-          <input type="email" placeholder="e.g. stephenking@lorem.com" />
-          <label for="numer">Phone Number</label>
-          <input type="number" placeholder="e.g. +1 234 567 890" />
-        </label>
-      </form>
     </section> -->
 
     <!-- Step 1 end -->
@@ -83,7 +72,7 @@
         <div class="subscription-time">
           <div class="toggle-btn-main">
             Rounded switch -->
-            <!-- <div class="toggle-btn">
+    <!-- <div class="toggle-btn">
               <span class="">Monthly</span>
               <label class="switch">
                 <input type="checkbox">
@@ -145,24 +134,47 @@
     at support@loremgaming.com. -->
 
     <!-- Step 5 end -->
-<section class="middle-section">
+    <!--- Middle section -->
+    <section class="middle-section">
+      <div class="form-container">
+        <div class="header-info">
+          <h2>Personal info</h2>
+          <p>Please provide your name, email address, and phone number.</p>
 
-</section>
+        </div>
 
+        <form class="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Stephen King" />
+
+          <label for="email">Email Address </label>
+          <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" />
+
+          </label>
+        </form>
+
+
+      </div>
+    </section>
+    <!-- Middle section ends-->
     <section class="footer" id="footer">
       <button class="go-back-btn">
-       Go Back
+        Go Back
       </button>
       <button class="next-btn">
-       <p class="next-btn-text">Next Step</p>
-        </button>
-  </section>
+        <p class="next-btn-text">Next Step</p>
+      </button>
+    </section>
 
-  <footer class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
-  </footer>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Your
+        Name Here</a>.
+    </footer>
 </body>
 
 </html>
