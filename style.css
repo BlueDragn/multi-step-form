@@ -423,7 +423,7 @@ input:checked+.slider:before {
 
 /** Step_03  Add-ons selection page Begins **/
 .check_box_form{
-border: 1px solid red;
+/* border: 1px solid red; */
 display: flex;
 flex-direction: column;
 
@@ -441,21 +441,30 @@ background: #F8F9FF;
 /* Purple */
 border: 1px solid #483EFF;
 border-radius: 8px;
-    border: 1px solid burlywood;
+/* border: 1px solid burlywood; */
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    box-sizing: border-box;
+
 }
 .check_box > input{
 /* Purple */
-
+width: 20px;
+height: 20px;
 background: #483EFF;
 border-radius: 4px;
+margin-left: 10px;
+text-align: start;
 }
 .check_box > label{
 /* display: flex; */
 /* flex-direction: column; */
 text-align: left;
-margin-top: 12px;
-margin-left: 12px;
+/* margin-top: 12px;
+margin-left: 12px; */
 }
 .check_box > label > h3{
 margin-top: 0;
@@ -477,9 +486,22 @@ color: #022959;
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
-line-height: 20px;
+/* line-height: 20px; */
 /* identical to box height, or 167% */
 /* Grey */
 color: #9699AA;
+}
+.check_box > span{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+/* line-height: 20px; */
+/* identical to box height, or 167% */
+/* text-align: right; */
+/* Purple */
+color: #483EFF;
+margin-left: 35px;
+padding: 11px;
 }
 /** Middle Section Ends **/
