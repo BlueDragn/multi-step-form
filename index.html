@@ -136,7 +136,8 @@
     <!-- Step 5 end -->
     <!--- Middle section -->
     <section class="middle-section">
-      <div class="form-container">
+      <!--Step_01 Begins-->
+      <div class="form-container" id="personal-info" style="display:none;" >
         <div class="header-info">
           <h2>Personal info</h2>
           <p>Please provide your name, email address, and phone number.</p>
@@ -155,7 +156,43 @@
 
           </label>
         </form>
+      </div>
+      <!--Step_01 Ends-->
 
+
+      <!--Step_02 Begins-->
+       <div class="form-container" id="subcription-plan">
+        <div class="header-info">
+          <h2>Select your plan</h2>
+          <p>You have the option of monthly or yearly billing.</p>
+        </div>
+        <form class="form">
+          <button class="arcade billing-op-btn" id="arcade">
+            <img src="/assets/images/icon-arcade.svg">
+            <h3>Arcade</h3>
+            <p class="price" id="price-rate">$9/mo</p>
+          </button>
+          <button class="advanced billing-op-btn" id="advanced">
+            <img src="/assets/images/icon-advanced.svg">
+            <h3>Arcade</h3>
+            <p class="price" id="price-rate">$12/mo</p>
+          </button>
+          <button class="pro billing-op-btn" id="pro">
+            <img src="/assets/images/icon-pro.svg">
+            <h3>Arcade</h3>
+            <p class="price" id="price-rate">$15/mo</p>
+          </button>
+          <!--Rounded switch -->
+          <div class="toggle-btn">
+                    <span class="">Monthly</span>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                    <span class="">Yearly</span>
+                  </div>
+
+             </form>
 
       </div>
     </section>

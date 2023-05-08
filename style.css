@@ -34,26 +34,29 @@ body {
 p {
     font-size: 16px;
 }
+
 /** Header styling Begins **/
-.header{
-width: 375px;
-height: 172px;
-/* border: 1px solid red; */
-background: url(/assets/images/bg-sidebar-mobile.svg);
-display: flex;
-justify-content: center;
+.header {
+    width: 375px;
+    height: 172px;
+    /* border: 1px solid red; */
+    background: url(/assets/images/bg-sidebar-mobile.svg);
+    display: flex;
+    justify-content: center;
 
 }
-.step-list-items{
+
+.step-list-items {
     width: 180px;
     height: 33px;
     /* border: 1px solid white; */
-/** Positioning **/
+    /** Positioning **/
     display: flex;
     justify-content: space-between;
     padding-left: 0;
 
 }
+
 /** Header styling ends **/
 .step-list {
     width: 33px;
@@ -89,15 +92,15 @@ justify-content: center;
 }
 
 /** Footer Section styling Starts **/
-.footer{
-width: 375px;
-height: 72px;
-/* border: 1px solid red; */
-display: flex;
-justify-content: space-between;
-align-items: center;
-background: #FFFFFF;
-box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+.footer {
+    width: 375px;
+    height: 72px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
 
 }
 
@@ -134,7 +137,7 @@ box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
     text-align: center;
     margin-left: 16px;
     border: none;
-/*inner text */
+    /*inner text */
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -147,109 +150,115 @@ box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
 /** Footer section Ends **/
 
 /** Middle Section starts **/
-.middle-section{
-width: 375px;
-height: 500px;
-/* border: 1px solid red; */
-background-color: var(--Light_blue);
+.middle-section {
+    width: 375px;
+    height: 500px;
+    /* border: 1px solid red; */
+    background-color: var(--Light_blue);
 }
 
 /** header info **/
-.form-container{
-width: 343px;
-height: 376px;
-background: #FFFFFF;
-box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
-border-radius: 10px;
-position: absolute;
-left: 16px;
-top: 99px;
+.form-container {
+    width: 343px;
+    /* height: 376px; */
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+    border-radius: 10px;
+    position: absolute;
+    left: 16px;
+    top: 99px;
 }
-.header-info{
-width: 295px;
-height: 87px;
-/* border: 1px solid red; */
-padding: 7px;
+
+.header-info {
+    width: 295px;
+    height: 87px;
+    /* border: 1px solid red; */
+    padding: 7px;
 }
-.header-info > h2{
+
+.header-info>h2 {
     margin: 0;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-/* identical to box height */
-/* Denim */
-color: #022959;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    /* Denim */
+    color: #022959;
 
-padding-left: 24px;
-padding-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 
 }
-.header-info > p{
-    margin-left:20px;
+
+.header-info>p {
+    margin-left: 20px;
     /* Body (L) */
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 25px;
-/* or 156% */
-/* Grey */
-color: #9699AA;
-padding: 2px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+    /* Grey */
+    color: #9699AA;
+    padding: 2px;
 }
+
 /** Form Section Starts **/
-.form{
-width: 295px;
-height: 203px;
-/* border: 1px solid red; */
+.form {
+    width: 295px;
+    /* height: 203px; */
+    /* border: 1px solid red; */
 
-display: flex;
-flex-direction: column;
-
-padding-left: 24px;
-padding-right: 24px;
-padding-bottom: 32px;
-padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-top: 30px;
 }
-.form > label {
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-/* identical to box height */
-/* Denim */
-color: #022959;
 
-width: 33px;
-height: 14px;
-margin-bottom: 2px;
+.form>label {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    /* Denim */
+    color: #022959;
+
+    width: 33px;
+    height: 14px;
+    margin-bottom: 2px;
 
 }
-.form > input{
-box-sizing: border-box;
+
+.form>input {
+    box-sizing: border-box;
     /* White */
-background: #FFFFFF;
-/* Border Color */
-border: 1px solid #D6D9E6;
-border-radius: 4px;
+    background: #FFFFFF;
+    /* Border Color */
+    border: 1px solid #D6D9E6;
+    border-radius: 4px;
 
-width: 295px;
-height: 65px;
-margin-bottom: 15px;
-padding-left: 15px;
+    width: 295px;
+    height: 65px;
+    margin-bottom: 15px;
+    padding-left: 15px;
 
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 17px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
 
-/* Grey */
+    /* Grey */
 
-color: #9699AA;
+    color: #9699AA;
 }
 
 /** Form Section Ends **/
@@ -350,4 +359,27 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/** Step_02  Plan selection page **/
+.billing-op-btn{
+    width: 295px;
+    height: 77px;
+    /* Very Light Grey */
+
+background: #F8F9FF;
+/* Purple */
+/* box-sizing: border-box; */
+border: 1px solid  #D6D9E6;
+border-radius: 8px;
+display: flex;
+justify-content:baseline;
+align-items: center;
+gap: 15px;
+}
+.billing-op-btn >p{
+    padding: 5px;
+}
+.price{
+    align-self:last baseline;
 }
