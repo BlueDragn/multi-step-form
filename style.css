@@ -262,14 +262,14 @@ p {
 }
 
 /** Form Section Ends **/
-/** Middle Section Ends **/
 
 
 
 
 
 
-/** Step_02  Plan selection page **/
+
+/** Step_02  Plan selection page Begins **/
 .billing-op-btn{
     width: 295px;
     height: 77px;
@@ -419,3 +419,67 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+/** Step_02  Plan selection page Ends **/
+
+/** Step_03  Add-ons selection page Begins **/
+.check_box_form{
+border: 1px solid red;
+display: flex;
+flex-direction: column;
+
+
+margin-left: 20px;
+margin-top: 22px;
+margin-bottom: 32px;
+gap: 12px;
+}
+.check_box{
+    width: 295px;
+    height: 62px;
+    /* Very Light Grey */
+background: #F8F9FF;
+/* Purple */
+border: 1px solid #483EFF;
+border-radius: 8px;
+    border: 1px solid burlywood;
+    display: flex;
+}
+.check_box > input{
+/* Purple */
+
+background: #483EFF;
+border-radius: 4px;
+}
+.check_box > label{
+/* display: flex; */
+/* flex-direction: column; */
+text-align: left;
+margin-top: 12px;
+margin-left: 12px;
+}
+.check_box > label > h3{
+margin-top: 0;
+margin-bottom: 0;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+/* Denim */
+color: #022959;
+}
+
+.check_box > label > p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+/* Grey */
+color: #9699AA;
+}
+/** Middle Section Ends **/
