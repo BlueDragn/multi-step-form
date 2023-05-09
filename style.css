@@ -504,4 +504,119 @@ color: #483EFF;
 margin-left: 35px;
 padding: 11px;
 }
+
+
+/*** Section_03 ***/
+.order_sum{
+    /* Very Light Grey */
+background: #F8F9FF;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.plan_duration{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-left: 26px;
+    padding-right: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    text-align: right;
+    /* Denim */
+    color: #022959;
+
+}
+
+.plan_duration > a{
+    align-self:flex-end;
+    margin-left: 0;
+    position:absolute;
+    left: 26px;
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-decoration-line: underline;
+
+/* Grey */
+
+color: #9699AA;
+}
+
+.service_type{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 24px;
+
+    font-family: 'Ubuntu';
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Grey */
+    color: #9699AA;
+}
+.storage_type{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 24px;
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+/* Grey */
+color: #9699AA;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 24px;
+
+}
+.total > h3{
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Grey */
+
+color: #9699AA;
+}
+.total > p{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+text-align: right;
+
+/* Purple */
+
+color: #483EFF;
+
+}
+
 /** Middle Section Ends **/
