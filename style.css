@@ -618,5 +618,43 @@ text-align: right;
 color: #483EFF;
 
 }
+/** Thank you Card **/
 
+.thanks_note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.thanks_note > img{
+    margin-top: 79px;
+}
+.thanks_note > h1{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height */
+text-align: center;
+/* Denim */
+color: #022959;
+
+margin-top:24px;
+margin-bottom: 0;
+}
+.thanks_note >p{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+/* text-align: center; */
+/* Grey */
+padding: 24px;;
+color: #9699AA;
+margin-top:0;
+}
 /** Middle Section Ends **/
