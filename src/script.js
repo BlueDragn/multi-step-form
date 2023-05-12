@@ -20,16 +20,16 @@ function showTab(tabNum){
       }
 
       if (tabNum == (tabNum.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Confirm";
+        document.getElementById("next_btn").innerHTML = "Confirm";
       }else {
-        document.getElementById("nextBtn").innerHTML = "Next Step";
+        document.getElementById("next_btn").innerHTML = "Next Step";
       }
 
 }
 function nextPrev(tabNum){
-    var m = document.getElementsByClassName("form-container");
+    var n = document.getElementsByClassName("form-container");
     console.log(currentTab);
-m[currentTab].style.display = "none";
+n[currentTab].style.display = "none";
 currentTab = currentTab + tabNum;
 console.log(currentTab);
 showTab(currentTab);
