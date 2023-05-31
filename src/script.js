@@ -24,6 +24,7 @@ function navigatePage(offset) {
 // Show the new current page or thank you section
 if (currentPageIndex < pages.length - 1) {
   pages[currentPageIndex].style.display = 'block';
+  thankYouSection.style.display = 'none';
 } else {
   pages[currentPageIndex].style.display = 'none';
   thankYouSection.style.display = 'block';
