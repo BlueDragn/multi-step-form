@@ -38,24 +38,24 @@ p {
 .header {
     /* max-width: 375px;
     height: 172px; */
-    border: 1px solid red;
-    /* background: url(/assets/images/bg-sidebar-mobile.svg); */
+
      display: flex;
      flex-direction: column;
-    /* justify-content: center;  */
+
 
 }
 
 .step-list-items {
-     width: 180px;
+    width: 180px;
     height: 33px;
-    border: 1px solid rgb(110, 100, 8);
+
     /** Positioning **/
-    /* display: flex;
-    justify-content: space-between;
-    padding-left: 0; */
-    color: #022959;
     display: flex;
+    justify-content: space-between;
+    align-self:center;
+    padding-left: 0;
+    color: #022959;
+    position: absolute;
 
 }
 
@@ -63,8 +63,8 @@ p {
 .step-list {
     width: 33px;
     height: 33px;
-    /* White */
-    border: 1px solid #043d03;
+
+    border: 1px solid var(--White);
     border-radius: 50%;
     /* Internal Text*/
     font-family: 'Ubuntu', sans-serif;
@@ -80,17 +80,14 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     list-style: none;
-    color: #670e0e;
+    color: var(--White);
 
 }
 
 .step-btn:hover {
-    /* Denim */
 
-    color: #022959;
-    /* Sky Blue */
-
-    background: #BEE2FD
+    color: #022959; /* Denim */
+    background: #BEE2FD; /* Sky Blue */
 }
 
 /** Footer Section styling Starts **/
