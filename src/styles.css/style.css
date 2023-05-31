@@ -17,31 +17,33 @@
     --White: hsl(0, 0%, 100%);
 }
 
- /** Font  **/
- @font-face {
+/** Font  **/
+@font-face {
     font-family: Ubuntu;
-    src: url(https://fonts.google.com/specimen/Ubuntu);
-    Weights: 400, 500, 700;
+    src: url("/assets/fonts/Ubuntu-Bold.ttf");
+    
 }
 
 body {
     margin: 0;
     padding: 0;
-
 }
 
 p {
     font-size: 16px;
 }
 
+
 /** Header styling Begins **/
-.header {
+.header{
+
+}
+.hero-section {
     /* max-width: 375px;
     height: 172px; */
-
-     display: flex;
-     flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
 }
 
@@ -52,14 +54,15 @@ p {
     /** Positioning **/
     display: flex;
     justify-content: space-between;
-    align-self:center;
+    align-self: center;
     padding-left: 0;
     color: #022959;
     position: absolute;
+    top: 0;
 
 }
-
 /** Header styling ends **/
+
 .step-list {
     width: 33px;
     height: 33px;
@@ -81,13 +84,16 @@ p {
     text-transform: uppercase;
     list-style: none;
     color: var(--White);
+    color: black;
 
 }
 
 .step-btn:hover {
 
-    color: #022959; /* Denim */
-    background: #BEE2FD; /* Sky Blue */
+    color: #022959;
+    /* Denim */
+    background: #BEE2FD;
+    /* Sky Blue */
 }
 
 /** Footer Section styling Starts **/
@@ -149,7 +155,7 @@ p {
 /** Footer section Ends **/
 
 /** Middle Section starts **/
-.middle-section {
+.main-section {
     width: 375px;
     height: 500px;
     /* border: 1px solid red; */
@@ -168,14 +174,14 @@ p {
     top: 99px;
 }
 
-.header-info {
+.form-header {
     width: 295px;
     height: 87px;
     /* border: 1px solid red; */
     padding: 7px;
 }
 
-.header-info>h2 {
+.header-info > h2 {
     margin: 0;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -264,63 +270,63 @@ p {
 
 
 
-
-
-
-
 /** Step_02  Plan selection page Begins **/
-.billing-op-btn{
+.billing-op-btn {
     width: 295px;
     height: 77px;
     /* Very Light Grey */
 
-background: #F8F9FF;
-/* Purple */
-/* box-sizing: border-box; */
-border: 1px solid  #D6D9E6;
-border-radius: 8px;
-display: flex;
-justify-content:baseline;
-align-items: center;
-gap: 12px;
+    background: #F8F9FF;
+    /* Purple */
+    /* box-sizing: border-box; */
+    border: 1px solid #D6D9E6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 12px;
 
 }
-.billing-op-btn > img{
+
+.billing-op-btn>img {
     margin-left: 10px;
 }
-.price-basket{
+
+.price-basket {
     display: flex;
     flex-direction: column;
     /* border: 1px solid rebeccapurple; */
     gap: 7px;
 }
-.price-basket > h3{
+
+.price-basket>h3 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
 
-/* Denim */
+    /* Denim */
 
-color: #022959;
+    color: #022959;
 }
-.price-basket > p{
+
+.price-basket>p {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
 
 
-/* Grey */
+    /* Grey */
 
-color: #9699AA;
+    color: #9699AA;
 
 }
 
@@ -418,29 +424,31 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
 /** Step_02  Plan selection page Ends **/
 
 /** Step_03  Add-ons selection page Begins **/
-.check_box_form{
-/* border: 1px solid red; */
-display: flex;
-flex-direction: column;
+.check_box_form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
 
 
-margin-left: 20px;
-margin-top: 22px;
-margin-bottom: 32px;
-gap: 12px;
+    margin-left: 20px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+    gap: 12px;
 }
-.check_box{
+
+.check_box {
     width: 295px;
     height: 62px;
     /* Very Light Grey */
-background: #F8F9FF;
-/* Purple */
-border: 1px solid #483EFF;
-border-radius: 8px;
-/* border: 1px solid burlywood; */
+    background: #F8F9FF;
+    /* Purple */
+    border: 1px solid #483EFF;
+    border-radius: 8px;
+    /* border: 1px solid burlywood; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -449,72 +457,77 @@ border-radius: 8px;
     box-sizing: border-box;
 
 }
-.check_box > input{
-/* Purple */
-width: 20px;
-height: 20px;
-background: #483EFF;
-border-radius: 4px;
-margin-left: 10px;
-text-align: start;
-}
-.check_box > label{
-/* display: flex; */
-/* flex-direction: column; */
-text-align: left;
-/* margin-top: 12px;
-margin-left: 12px; */
-}
-.check_box > label > h3{
-margin-top: 0;
-margin-bottom: 0;
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-/* Denim */
-color: #022959;
+
+.check_box>input {
+    /* Purple */
+    width: 20px;
+    height: 20px;
+    background: #483EFF;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-align: start;
 }
 
-.check_box > label > p{
+.check_box>label {
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: left;
+    /* margin-top: 12px;
+margin-left: 12px; */
+}
+
+.check_box>label>h3 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-/* line-height: 20px; */
-/* identical to box height, or 167% */
-/* Grey */
-color: #9699AA;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    /* Denim */
+    color: #022959;
 }
-.check_box > span{
+
+.check_box>label>p {
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-/* line-height: 20px; */
-/* identical to box height, or 167% */
-/* text-align: right; */
-/* Purple */
-color: #483EFF;
-margin-left: 35px;
-padding: 11px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 20px; */
+    /* identical to box height, or 167% */
+    /* Grey */
+    color: #9699AA;
+}
+
+.check_box>span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 20px; */
+    /* identical to box height, or 167% */
+    /* text-align: right; */
+    /* Purple */
+    color: #483EFF;
+    margin-left: 35px;
+    padding: 11px;
 }
 
 
 /*** Section_03 ***/
-.order_sum{
+.order_sum {
     /* Very Light Grey */
-background: #F8F9FF;
-border-radius: 8px;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+    background: #F8F9FF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.plan_duration{
+
+.plan_duration {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
@@ -531,27 +544,27 @@ justify-content: space-around;
 
 }
 
-.plan_duration > a{
-    align-self:flex-end;
+.plan_duration>a {
+    align-self: flex-end;
     margin-left: 0;
-    position:absolute;
+    position: absolute;
     left: 26px;
 
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
 
-text-decoration-line: underline;
+    text-decoration-line: underline;
 
-/* Grey */
+    /* Grey */
 
-color: #9699AA;
+    color: #9699AA;
 }
 
-.service_type{
+.service_type {
     display: flex;
     justify-content: space-between;
     padding-left: 26px;
@@ -567,93 +580,103 @@ color: #9699AA;
     /* Grey */
     color: #9699AA;
 }
-.storage_type{
+
+.storage_type {
     display: flex;
     justify-content: space-between;
     padding-left: 26px;
     padding-right: 24px;
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-/* Grey */
-color: #9699AA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Grey */
+    color: #9699AA;
 }
-.total{
+
+.total {
     display: flex;
     justify-content: space-between;
     padding-left: 26px;
     padding-right: 24px;
 
 }
-.total > h3{
 
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+.total>h3 {
 
-
-/* Grey */
-
-color: #9699AA;
-}
-.total > p{
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
 
-text-align: right;
 
-/* Purple */
+    /* Grey */
 
-color: #483EFF;
+    color: #9699AA;
+}
+
+.total>p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    text-align: right;
+
+    /* Purple */
+
+    color: #483EFF;
 
 }
+
 /** Thank you Card **/
 
-.thanks_note{
+.thanks_note {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
-.thanks_note > img{
+
+.thanks_note>img {
     margin-top: 79px;
 }
-.thanks_note > h1{
-    font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-/* identical to box height */
-text-align: center;
-/* Denim */
-color: #022959;
 
-margin-top:24px;
-margin-bottom: 0;
-}
-.thanks_note >p{
+.thanks_note>h1 {
     font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 25px;
-/* or 156% */
-/* text-align: center; */
-/* Grey */
-padding: 24px;;
-color: #9699AA;
-margin-top:0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    /* Denim */
+    color: #022959;
+
+    margin-top: 24px;
+    margin-bottom: 0;
 }
+
+.thanks_note>p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+    /* text-align: center; */
+    /* Grey */
+    padding: 24px;
+    ;
+    color: #9699AA;
+    margin-top: 0;
+}
+
 /** Middle Section Ends **/

@@ -1,36 +1,33 @@
 
-
-var currentTab = 0;
-showTab(currentTab);
-
-var x = document.getElementById("next_btn");
-
+//Set the current tab to 0
+var currentPageIndex = 0;
+var pages = document.getElementsByClassName('form-container');
+var thankYouSection = document.getElementById("thank_you");
 
 
+//Function to Navigate to different section of form
+function navigatePage(offset) {
+  // Hide the current page
+  pages[currentPageIndex].style.display = 'none';
 
-function showTab(tabNum){
-    //This function will show the right tab
-    var m = document.getElementsByClassName("form-container");
 
-    m[tabNum].style.display = "block";
-    if (tabNum == 0){
-        document.getElementById("back_btn").style.display = "none";
-    }else {
-        document.getElementById("back_btn").style.display = "flex";
-      }
+  // Update the current page index
+  currentPageIndex += offset;
+  console.log(currentPageIndex);
+  // Ensure the index stays within bounds
+  if (currentPageIndex < 0) {
+    currentPageIndex = 0;
+  } else if (currentPageIndex >= pages.length) {
+    currentPageIndex = pages.length - 1;
+  }
 
-      if (tabNum == (tabNum.length - 1)) {
-        document.getElementById("next_btn").innerHTML = "Confirm";
-      }else {
-        document.getElementById("next_btn").innerHTML = "Next Step";
-      }
+// Show the new current page or thank you section
+if (currentPageIndex < pages.length - 1) {
+  pages[currentPageIndex].style.display = 'block';
+} else {
+  pages[currentPageIndex].style.display = 'none';
+  thankYouSection.style.display = 'block';
+}
 
 }
-function nextPrev(tabNum){
-    var n = document.getElementsByClassName("form-container");
-    console.log(currentTab);
-n[currentTab].style.display = "none";
-currentTab = currentTab + tabNum;
-console.log(currentTab);
-showTab(currentTab);
-}
+
