@@ -35,9 +35,7 @@ p {
 
 
 /** Header styling Begins **/
-.header{
 
-}
 .hero-section {
     /* max-width: 375px;
     height: 172px; */
@@ -58,7 +56,8 @@ p {
     padding-left: 0;
     color: #022959;
     position: absolute;
-    top: 0;
+    left: 98px;
+    top: 32px;
 
 }
 /** Header styling ends **/
@@ -87,13 +86,12 @@ p {
     color: black;
 
 }
-
-.step-btn:hover {
-
+.active{
+    background:#BEE2FD;
+}
+.step-list:hover {
     color: #022959;
-    /* Denim */
     background: #BEE2FD;
-    /* Sky Blue */
 }
 
 /** Footer Section styling Starts **/
