@@ -89,10 +89,10 @@ p {
 .active{
     background:#BEE2FD;
 }
-.step-list:hover {
+/* .step-list:hover {
     color: #022959;
     background: #BEE2FD;
-}
+} */
 
 /** Footer Section styling Starts **/
 .footer {
