@@ -23,9 +23,7 @@ function updateStepList() {
 function navigatePage(offset) {
 
   // Hide the current page
-  if (currentPageIndex < pages.length) {
     pages[currentPageIndex].style.display = 'none';
-  }
  // Update the current page index
   currentPageIndex += offset;
 
@@ -33,7 +31,7 @@ function navigatePage(offset) {
   if (currentPageIndex < 0) {
     currentPageIndex = 0;
     console.log(currentPageIndex);
-  } else if (currentPageIndex >= pages.length) {
+  } else if (currentPageIndex >= pages.length-1) {
     currentPageIndex = pages.length -1;
     nextBtn.style.display = 'none';
     confirmBtn.style.display = 'block';
