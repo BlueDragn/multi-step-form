@@ -135,3 +135,18 @@ planButtons.forEach(button => {
      button.classList.add('selected');
   });
 });
+
+// selections of step 4
+
+const addOnCheckboxes = document.querySelectorAll('.addOn');
+
+  addOnCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const check_box = checkbox.closest('.check_box');
+      if (checkbox.checked) {
+        check_box.classList.add('selected');
+      } else {
+        check_box.classList.remove('selected');
+      }
+    });
+  });

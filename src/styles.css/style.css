@@ -286,8 +286,15 @@ p {
 
 }
 .billing-op-btn.selected {
-    background-color: #ffaf7e;
-    color: #fff;
+    /* background-color: #ffaf7e;
+    color: #fff; */
+
+    /* Very Light Grey */
+background: #F8F9FF;
+/* Purple */
+
+border: 1px solid #483EFF;
+border-radius: 8px;
   }
 
 .billing-op-btn>img {
@@ -445,12 +452,14 @@ input:checked+.slider:before {
 .check_box {
     width: 295px;
     height: 62px;
-    /* Very Light Grey */
-    background: #F8F9FF;
-    /* Purple */
-    border: 1px solid #483EFF;
-    border-radius: 8px;
     /* border: 1px solid burlywood; */
+    /* White */
+
+background: #FFFFFF;
+/* Light Grey */
+
+border: 1px solid #D6D9E6;
+border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -459,6 +468,12 @@ input:checked+.slider:before {
     box-sizing: border-box;
 
 }
+.check_box.selected {
+
+    background: #F8F9FF;
+    border: 1px solid #483EFF;
+    border-radius: 8px;
+  }
 
 .check_box>input {
     /* Purple */
