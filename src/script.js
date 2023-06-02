@@ -69,3 +69,37 @@ function confirmPage() {
 
 // Call the updateStepList function initially to set the style for the first section
 updateStepList();
+
+
+
+
+// Plan Prices
+let arcadePrice = document.getElementById("arcadePrice");
+let advancedPrice = document.getElementById("advancedPrice");
+let proPrice = document.getElementById("proPrice");
+
+//add ons prices
+let onlineServicePrice  = 0;
+let largerStoragePrice = 0;
+let customizedProfilePrice = 0;
+
+ // Retrieve the toggle switch element
+ const toggleSwitch = document.getElementById('toggle-switch');
+
+// Add an event listener to detect changes in the toggle switch
+toggleSwitch.addEventListener('change', function() {
+
+  if (toggleSwitch.checked) {
+
+    // Modify the price of components for yearly option in step 2 and 3
+    arcadePrice.innerHTML = '$90/yr';
+    advancedPrice.innerHTML = '$120/yr';
+    proPrice.innerHTML = '$150/yr';
+  } else {
+
+    // Modify the price of components for monthly option in step 2 and 3
+    arcadePrice.innerHTML = '$9/mo';
+    advancedPrice.innerHTML = '$12/mo';
+    proPrice = '$15/mo';
+   }
+});
