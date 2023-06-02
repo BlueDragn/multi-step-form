@@ -79,9 +79,9 @@ let advancedPrice = document.getElementById("advancedPrice");
 let proPrice = document.getElementById("proPrice");
 
 //add ons prices
-let onlineServicePrice  = 0;
-let largerStoragePrice = 0;
-let customizedProfilePrice = 0;
+let onlineServicePrice  = document.getElementById("onlineServicePrice");
+let largerStoragePrice = document.getElementById("storagePrice");
+let customizedProfilePrice = document.getElementById("profilePrice");
 
  // Retrieve the toggle switch element
  const toggleSwitch = document.getElementById('toggle-switch');
@@ -95,11 +95,21 @@ toggleSwitch.addEventListener('change', function() {
     arcadePrice.innerHTML = '$90/yr';
     advancedPrice.innerHTML = '$120/yr';
     proPrice.innerHTML = '$150/yr';
+
+    //step 3
+    onlineServicePrice.innerHTML ='+$10/yr';
+    largerStoragePrice.innerHTML ='+$20/yr';
+    customizedProfilePrice.innerHTML  ='+$20/yr';
   } else {
 
     // Modify the price of components for monthly option in step 2 and 3
     arcadePrice.innerHTML = '$9/mo';
     advancedPrice.innerHTML = '$12/mo';
-    proPrice = '$15/mo';
+    proPrice.innerHTML = '$15/mo';
+
+    //Step 3
+    onlineServicePrice.innerHTML ='+$1/mo';
+    largerStoragePrice.innerHTML ='+$2/mo';
+     customizedProfilePrice.innerHTML  ='+$2/mo';
    }
 });
