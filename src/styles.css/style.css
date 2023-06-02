@@ -118,6 +118,20 @@ p {
     align-items: center;
     border: none;
     margin-right: 16px;
+
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+/* White */
+
+color: #FFFFFF;
+
+
 }
 
 .next-btn-text {
@@ -148,6 +162,32 @@ p {
     line-height: 16px;
     /* identical to box height */
     color: #9699AA;
+}
+/**Confirm button **/
+.confirm-btn{
+    width: 97px;
+height: 40px;
+    /* Purple */
+background: #483EFF;
+border-radius: 4px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border: none;
+margin-right: 16px;
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
 }
 
 /** Footer section Ends **/
@@ -700,4 +740,6 @@ border-radius: 10px;
     margin-top: 0;
 }
 
-/** Middle Section Ends **/
+
+
+/** Main Section Ends **/
