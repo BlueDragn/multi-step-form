@@ -285,6 +285,10 @@ p {
     gap: 12px;
 
 }
+.billing-op-btn.selected {
+    background-color: #ffaf7e;
+    color: #fff;
+  }
 
 .billing-op-btn>img {
     margin-left: 10px;

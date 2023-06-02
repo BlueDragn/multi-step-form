@@ -113,3 +113,25 @@ toggleSwitch.addEventListener('change', function() {
      customizedProfilePrice.innerHTML  ='+$2/mo';
    }
 });
+
+
+// Selection on step 3
+
+// Get all the plan buttons
+const planButtons = document.querySelectorAll('.billing-op-btn');
+
+// Add click event listener to each button
+planButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+   e.preventDefault(); // Prevent default form submission
+
+    // Remove the selected class from all plan buttons
+    planButtons.forEach(btn => btn.classList.remove('selected'));
+
+    // Add the selected class to the clicked plan button
+    button.classList.add('selected');
+
+     // Add the selected class to the clicked plan button
+     button.classList.add('selected');
+  });
+});
