@@ -21,7 +21,7 @@
 @font-face {
     font-family: Ubuntu;
     src: url("/assets/fonts/Ubuntu-Bold.ttf");
-    
+
 }
 
 body {
@@ -453,7 +453,6 @@ input:checked+.slider:before {
     width: 295px;
     height: 62px;
     /* border: 1px solid burlywood; */
-    /* White */
 
 background: #FFFFFF;
 /* Light Grey */
@@ -469,7 +468,6 @@ border-radius: 8px;
 
 }
 .check_box.selected {
-
     background: #F8F9FF;
     border: 1px solid #483EFF;
     border-radius: 8px;
@@ -660,6 +658,12 @@ margin-left: 12px; */
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+
+    /* White */
+
+background: #FFFFFF;
+box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+border-radius: 10px;
 }
 
 .thanks_note>img {
