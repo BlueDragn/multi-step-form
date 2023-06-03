@@ -7,218 +7,314 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="stylesheet" href="./src/styles.css/style.css">
+  <!-- <link rel="stylesheet" href="./src/styles.css/style.css"> -->
+  <link rel="stylesheet" href="./src/styles.css/newstyle.css">
 
   <title>Frontend Mentor | Multi-step form</title>
-
-  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  <header class="header" id="header">
-    <!------- Hero Section Begins -------->
-    <section class="hero-section" id="hero">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="172" viewBox="0 0 375 172"><defs><path id="a" d="M0 0h375v172H0z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use xlink:href="#a" fill="#483EFF"/><g mask="url(#b)"><g transform="translate(-151.029 -133.957)"><path fill="#6259FF" d="M79.546 349.634c54.547 128.646 292.524 204.132 354.626 99.852 62.102-104.28-95.035-123.204-150.583-230.963-55.547-107.759-98.711-175.015-178.973-150.466C24.354 92.607 25 220.987 79.546 349.634Z"/><ellipse cx="129.864" cy="258.711" fill="#FFAF7E" rx="96.329" ry="96.373"/><path fill="#F9818E" d="M464.88 433.146c87.31-40.69 133.585-206.525 60.253-246.82-73.333-40.293-82.587 68.465-155.485 109.343-72.898 40.877-118.192 72.245-99.348 126.973 18.845 54.728 107.27 51.194 194.58 10.504Z"/><g stroke="#FFF" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5"><path d="m367.336 243.125 15.263-15.549M430.872 251.016l-17.995-15.112M399.36 271.751l-9.94 21.293"/></g></g></g></g></svg>
-      <ul class="step-list-items">
-        <li class="step-list">1</li>
-        <li class="step-list">2</li>
-        <li class="step-list">3</li>
-        <li class="step-list">4</li>
-      </ul>
+
+
+
+  <!--- Main  section Begins -->
+  <section class="main-section" id="main">
+
+
+    <!------- Header Section Begins -------->
+    <header class="header" id="header">
+      <!------- Hero Section Begins -------->
+      <section class="hero-section" id="hero">
+        <svg class="mobile-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="375" height="172" viewBox="0 0 375 172">
+          <defs>
+            <path id="a" d="M0 0h375v172H0z" />
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <mask id="b" fill="#fff">
+              <use xlink:href="#a" />
+            </mask>
+            <use xlink:href="#a" fill="#483EFF" />
+            <g mask="url(#b)">
+              <g transform="translate(-151.029 -133.957)">
+                <path fill="#6259FF"
+                  d="M79.546 349.634c54.547 128.646 292.524 204.132 354.626 99.852 62.102-104.28-95.035-123.204-150.583-230.963-55.547-107.759-98.711-175.015-178.973-150.466C24.354 92.607 25 220.987 79.546 349.634Z" />
+                <ellipse cx="129.864" cy="258.711" fill="#FFAF7E" rx="96.329" ry="96.373" />
+                <path fill="#F9818E"
+                  d="M464.88 433.146c87.31-40.69 133.585-206.525 60.253-246.82-73.333-40.293-82.587 68.465-155.485 109.343-72.898 40.877-118.192 72.245-99.348 126.973 18.845 54.728 107.27 51.194 194.58 10.504Z" />
+                <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5">
+                  <path d="m367.336 243.125 15.263-15.549M430.872 251.016l-17.995-15.112M399.36 271.751l-9.94 21.293" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <svg class="desktop-svg" xmlns="http://www.w3.org/2000/svg" width="274" height="568" fill="none"
+          viewBox="0 0 274 568">
+          <rect width="274" height="568" fill="#483EFF" rx="10" />
+          <mask id="a" width="274" height="568" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+            <rect width="274" height="568" fill="#fff" rx="10" />
+          </mask>
+          <g mask="url(#a)">
+            <path fill="#6259FF" fill-rule="evenodd"
+              d="M-34.692 543.101C3.247 632.538 168.767 685.017 211.96 612.52c43.194-72.497-66.099-85.653-104.735-160.569-38.635-74.916-68.657-121.674-124.482-104.607-55.824 17.068-55.375 106.32-17.436 195.757Z"
+              clip-rule="evenodd" />
+            <path fill="#F9818E" fill-rule="evenodd"
+              d="M233.095 601.153c60.679-28.278 92.839-143.526 41.875-171.528-50.965-28.003-57.397 47.579-108.059 75.987-50.662 28.408-82.14 50.207-69.044 88.241 13.096 38.034 74.549 35.578 135.228 7.3Z"
+              clip-rule="evenodd" />
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5"
+              d="m165.305 469.097 10.607-10.806M209.461 474.581l-12.506-10.503M187.56 488.991l-6.908 14.798" />
+            <path fill="#FFAF7E"
+              d="M.305 546.891c37.003 0 67-29.997 67-67s-29.997-67-67-67-67 29.997-67 67 29.997 67 67 67Z" />
+          </g>
+        </svg>
+        <div class="step-list-items">
+          <div class="step-indicator">
+            <div class="indicator_num">1</div>
+            <div class="indicator_info">
+              <h2>Step 1</h2>
+              <h3>Your info</h3>
+            </div>
+          </div>
+          <div class="step-indicator">
+            <div class="indicator_num">2</div>
+            <div class="indicator_info">
+              <h2>Step 2</h2>
+              <h3>select plan</h3>
+            </div>
+          </div>
+          <div class="step-indicator">
+            <div class="indicator_num">3</div>
+            <div class="indicator_info">
+              <h2>Step 3</h2>
+              <h3>add-ons</h3>
+            </div>
+          </div>
+          <div class="step-indicator">
+            <div class="indicator_num">4</div>
+            <div class="indicator_info">
+              <h2>Step 4</h2>
+              <h3>summary</h3>
+            </div>
+          </div>
+        </div>
+
+
       </section>
     </header>
-    <!------- Hero Section Ends -------->
+    <!------- Header Section Ends -------->
 
+    <!----Form Section -->
+    <section class="form-section">
 
-    <!--- Main  section Begins -->
-    <section class="main-section" id="main">
-
-      <!--Step_01 Begins Personal Info -->
-      <div class="form-container" id="personal-info" >
-        <!--header info-->
-        <div class="form-header">
-          <h2>Personal info</h2>
-          <p>Please provide your name, email address, and phone number.</p>
-        </div>
-
-        <!----Form Container-->
-        <form class="form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="e.g. Stephen King" />
-
-          <label for="email">Email Address </label>
-          <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" />
-
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" />
-
-          </label>
-        </form>
-      </div>
-      <!--Step_01 Ends-->
-
-      <!--Step_02 Begins Game Plans -->
-       <div class="form-container" id="subcription-plan" style="display:none;" >
-        <div class="header-info">
-          <h2>Select your plan</h2>
-          <p>You have the option of monthly or yearly billing.</p>
-        </div>
-        <form class="form">
-          <button class="arcade billing-op-btn" id="arcade">
-            <!-- <img src="/assets/images/icon-arcade.svg"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#FFAF7E"/><path fill="#FFF" fill-rule="nonzero" d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"/></g></svg>
-            <div class="price-basket">
-              <h3>Arcade</h3>
-              <p class="price" id="arcadePrice">$9/mo</p>
-            </div>
-
-          </button>
-          <button class="advanced billing-op-btn" id="advanced">
-            <!-- <img src="/assets/images/icon-advanced.svg"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#F9818E"/><path fill="#FFF" fill-rule="nonzero" d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z"/></g></svg>
-            <div class="price-basket">
-              <h3>Advanced</h3>
-              <p class="price" id="advancedPrice">$12/mo</p>
-            </div>
-
-          </button>
-          <button class="pro billing-op-btn" id="pro">
-            <!-- <img src="/assets/images/icon-pro.svg"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#483EFF"/><path fill="#FFF" fill-rule="nonzero" d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z"/></g></svg>
-            <div class="price-basket">
-              <h3>Pro</h3>
-              <p class="price" id="proPrice">$15/mo</p>
-            </div>
-
-
-          </button>
-             </form>
-  <!--Rounded switch -->
-  <div class="toggle-btn-main">
-  <div class="toggle-btn">
-    <span id="montly">Monthly</span>
-    <label class="switch">
-      <input type="checkbox" id="toggle-switch">
-      <span class="slider round"></span>
-    </label>
-    <span id="yearly">Yearly</span>
-  </div>
-</div>
-      </div>
-      <!---Step_02 Ends-->
-
-      <!--Step_03 Begins Add Ons ---->
-      <div class="form-container" id="add-ons-container" style="display: none;">
-        <div class="header-info">
-          <h2> Pick add-ons</h2>
-          <p>Add-ons help enhance your gaming experience.</p>
-        </div>
-        <form class="check_box_form">
-          <div class="check_box">
-            <input type="checkbox" class="addOn" name="add-on-01" value="Online_services">
-            <label for="add-on-01">
-              <h3>Online service</h3>
-              <p>Access to multiplayer games</p>
-            </label>
-            <span id="onlineServicePrice">+$1/mo</span>
+      <div class="form-section-container">
+        <!--Step_01 Begins Personal Info -->
+        <div class="form-container" id="personal-info">
+          <!--header info-->
+          <div class="form-header">
+            <h1>Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
           </div>
-        <div class="check_box">
-          <input type="checkbox"  class="addOn" id="add-on-02" name="add-on-02" value="Large_storage">
-          <label for="add-on-02">
-            <h3>Large storage</h3>
-            <p>Extra 1TB of cloud save</p>
+
+          <!----Form Container-->
+          <form class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Stephen King" />
+
+            <label for="email">Email Address </label>
+            <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" />
+
             </label>
-            <span id="storagePrice">+$2/mo</span>
+          </form>
         </div>
-          <div class="check_box">
-            <input type="checkbox" class="addOn" id="add-on-03" name="add-on-03" value="Customizable_profile">
-            <label for="add-on-03">
-              <h3>Customizable profile</h3>
-              <p>Custom theme on your profile</p>
+        <!--Step_01 Ends-->
+
+        <!--Step_02 Begins Game Plans -->
+        <div class="form-container" id="subcription-plan" style="display:none;">
+          <div class="header-info">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+          <form class="form">
+            <button class="arcade billing-op-btn" id="arcade">
+              <!-- <img src="/assets/images/icon-arcade.svg"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#FFAF7E" />
+                  <path fill="#FFF" fill-rule="nonzero"
+                    d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z" />
+                </g>
+              </svg>
+              <div class="price-basket">
+                <h3>Arcade</h3>
+                <p class="price" id="arcadePrice">$<span>9</span>/mo</p>
+              </div>
+
+            </button>
+            <button class="advanced billing-op-btn" id="advanced">
+              <!-- <img src="/assets/images/icon-advanced.svg"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#F9818E" />
+                  <path fill="#FFF" fill-rule="nonzero"
+                    d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z" />
+                </g>
+              </svg>
+              <div class="price-basket">
+                <h3>Advanced</h3>
+                <p class="price" id="advancedPrice">$12/mo</p>
+              </div>
+
+            </button>
+            <button class="pro billing-op-btn" id="pro">
+              <!-- <img src="/assets/images/icon-pro.svg"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="20" cy="20" r="20" fill="#483EFF" />
+                  <path fill="#FFF" fill-rule="nonzero"
+                    d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z" />
+                </g>
+              </svg>
+              <div class="price-basket">
+                <h3>Pro</h3>
+                <p class="price" id="proPrice">$15/mo</p>
+              </div>
+
+
+            </button>
+          </form>
+          <!--Rounded switch -->
+          <div class="toggle-btn-main">
+            <div class="toggle-btn">
+              <span id="montly">Monthly</span>
+              <label class="switch">
+                <input type="checkbox" id="toggle-switch">
+                <span class="slider round"></span>
+              </label>
+              <span id="yearly">Yearly</span>
+            </div>
+          </div>
+        </div>
+        <!---Step_02 Ends-->
+
+        <!--Step_03 Begins Add Ons ---->
+        <div class="form-container" id="add-ons-container" style="display: none;">
+          <div class="header-info">
+            <h1> Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+          <form class="check_box_form">
+            <div class="check_box">
+              <input type="checkbox" class="addOn" name="add-on-01" value="Online_services">
+              <label for="add-on-01">
+                <h3>Online service</h3>
+                <p>Access to multiplayer games</p>
+              </label>
+              <span id="onlineServicePrice">+$1/mo</span>
+            </div>
+            <div class="check_box">
+              <input type="checkbox" class="addOn" id="add-on-02" name="add-on-02" value="Large_storage">
+              <label for="add-on-02">
+                <h3>Large storage</h3>
+                <p>Extra 1TB of cloud save</p>
+              </label>
+              <span id="storagePrice">+$2/mo</span>
+            </div>
+            <div class="check_box">
+              <input type="checkbox" class="addOn" id="add-on-03" name="add-on-03" value="Customizable_profile">
+              <label for="add-on-03">
+                <h3>Customizable profile</h3>
+                <p>Custom theme on your profile</p>
               </label>
               <span id="profilePrice">+$2/mo</span>
+            </div>
+
+          </form>
+        </div>
+        <!--- Step_03 Ends ------>
+
+        <!-----Step_04 Begins OrderSummary--------->
+        <div class="form-container" id="Order_summary" style="display: none;">
+          <div class="header-info">
+            <h1>Finishing up</h1>
+            <p>Double-check everything looks OK before confirming</p>
           </div>
+          <div class="order_sum">
+            <article class="plan_duration">
 
-        </form>
-              </div>
-              <!--- Step_03 Ends ------>
+              <h3>Arcade(Yearly)</h3>
+              <a href="#subcription-plan">Change</a>
+              <p>$90/Yr</p>
 
-      <!-----Step_04 Begins OrderSummary--------->
-      <div class="form-container" id="Order_summary" style="display: none;" >
-        <div class="header-info">
-          <h2>Finishing up</h2>
-          <p>Double-check everything looks OK before confirming</p>
+            </article>
+            <hr>
+
+            <article class="service_type">
+              <p>Online services</p>
+              <p>+$10/yr</p>
+            </article>
+
+            <article class="storage_type">
+              <p>Large storage</p>
+              <p>+$20/yr</p>
+            </article>
+          </div>
+          <article class="total">
+            <h3>Total(per year)</h3>
+            <p class="totalPrice">$120/yr</p>
+          </article>
+
         </div>
-        <div class="order_sum">
-          <article class="plan_duration">
-
-          <h3>Arcade(Yearly)</h3>
-          <a href="#subcription-plan">Change</a>
-          <p>$90/Yr</p>
-
-          </article>
-<hr>
-
-       <article class="service_type">
-            <p>Online services</p>
-            <p>+$10/yr</p>
+        <!--- Thank You Card-->
+        <div class="thank-container" id="thank_you" style="display: none;">
+          <article class="thanks_note">
+            <img src="assets/images/icon-thank-you.svg">
+            <h1>Thank You!</h1>
+            <P>Thanks for confirming your subscription!
+              We hope you have fun using our platform.If you ever need support,please feel free to email us at
+              support@loremgaming.com.
+            </P>
           </article>
 
-          <article class="storage_type">
-            <p>Large storage</p>
-            <p>+$20/yr</p>
-          </article>
         </div>
-        <article class="total">
-          <h3>Total(per year)</h3>
-          <p>$120/yr</p>
-        </article>
-
       </div>
-      <!--- Thank You Card-->
-      <div class="thank-container" id="thank_you" style="display: none;">
-        <article class="thanks_note">
-          <img src="assets/images/icon-thank-you.svg">
-          <h1>Thank You!</h1>
-          <P>Thanks for confirming your subscription!
-           We hope you have fun using our platform.If you ever need support,please feel free to email us at support@loremgaming.com.
-          </P>
-        </article>
 
-      </div>
-    </section>
-    <!-- Main section ends-->
+       <!----footer button Section -->
+      <section class="footer" id="footer">
+        <button class="go-back-btn" id="back_btn" onclick="navigatePage(-1)">
+          Go Back
+        </button>
+        <button class="next-btn" id="next_btn" onclick="navigatePage(1)">
+          Next Step
+        </button>
 
-    <section class="footer" id="footer" >
-      <button class="go-back-btn" id="back_btn" onclick="navigatePage(-1)">
-        Go Back
-      </button>
-      <button class="next-btn" id="next_btn" onclick="navigatePage(1)" >
-        Next Step
-      </button>
+        <button class="confirm-btn" id="confirm_btn" onclick="confirmPage()" style="display: none;">
+          Confirm
+        </button>
+      </section>
 
-      <button class="confirm-btn" id="confirm_btn" onclick="confirmPage()" style="display: none;">
-        Confirm
-      </button>
     </section>
 
-    <!-- <footer class="attribution">
+
+
+  </section>
+
+
+  <!-- Main section ends-->
+
+
+
+  <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
         href="#">Your
         Name Here</a>.
     </footer> -->
-    <script src="src/script.js"></script>
+  <script src="src/script.js"></script> 
 </body>
 
 </html>

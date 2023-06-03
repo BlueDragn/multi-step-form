@@ -23,18 +23,29 @@
     src: url("/assets/fonts/Ubuntu-Bold.ttf");
 
 }
-
+/** Global Styles **/
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--Light_blue);
+    font-family: 'Ubuntu';
+    font-style: normal;
 }
 
-p {
-    font-size: 16px;
+/** Main Content Styling Begins**/
+.main-section {
+     /* width: 375px; */
+     max-width: 940px;
+     min-height: 600px;
+     border: 3px solid rgb(187, 173, 15);
+     display: flex;
 }
-
 
 /** Header styling Begins **/
+.header{
+    width: 375px;
+    height: 568px;
+}
 
 .hero-section {
     /* max-width: 375px;
@@ -69,8 +80,6 @@ p {
     border: 1px solid var(--White);
     border-radius: 50%;
     /* Internal Text*/
-    font-family: 'Ubuntu', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -94,115 +103,19 @@ p {
     background: #BEE2FD;
 } */
 
-/** Footer Section styling Starts **/
-.footer {
-    width: 375px;
-    height: 72px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #FFFFFF;
-    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
-
-}
-
-/** Next Button **/
-.next-btn {
-    width: 97px;
-    height: 40px;
-    background: #022959;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: none;
-    margin-right: 16px;
-
-    font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-
-/* White */
-
-color: #FFFFFF;
-
-
-}
-
-.next-btn-text {
-    width: 65px;
-    height: 16px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height */
-    /* White */
-    color: #FFFFFF;
-}
-
-/* Go Back Button */
-.go-back-btn {
-    width: 70px;
-    height: 26px;
-    text-align: center;
-    margin-left: 16px;
-    border: none;
-    /*inner text */
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height */
-    color: #9699AA;
-}
-/**Confirm button **/
-.confirm-btn{
-    width: 97px;
-height: 40px;
-    /* Purple */
-background: #483EFF;
-border-radius: 4px;
+/** Form Section **/
+.form-section{
 display: flex;
-justify-content: space-around;
-align-items: center;
-border: none;
-margin-right: 16px;
-
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-text-align: center;
-
-/* White */
-
-color: #FFFFFF;
 }
 
-/** Footer section Ends **/
 
-/** Middle Section starts **/
-.main-section {
-    width: 375px;
-    height: 500px;
-    /* border: 1px solid red; */
-    background-color: var(--Light_blue);
-}
+
+/** Mi Section starts **/
+
 
 /** header info **/
 .form-container {
-    width: 343px;
+    max-width: 343px;
     /* height: 376px; */
     background: #FFFFFF;
     box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
@@ -221,8 +134,7 @@ color: #FFFFFF;
 
 .header-info > h2 {
     margin: 0;
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -238,8 +150,7 @@ color: #FFFFFF;
 .header-info>p {
     margin-left: 20px;
     /* Body (L) */
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -265,8 +176,7 @@ color: #FFFFFF;
 }
 
 .form>label {
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -293,8 +203,6 @@ color: #FFFFFF;
     margin-bottom: 15px;
     padding-left: 15px;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 17px;
@@ -351,8 +259,7 @@ border-radius: 8px;
 .price-basket>h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -365,8 +272,7 @@ border-radius: 8px;
 .price-basket>p {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -534,8 +440,7 @@ margin-left: 12px; */
 .check_box>label>h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -547,8 +452,7 @@ margin-left: 12px; */
 .check_box>label>p {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 12px;
     /* line-height: 20px; */
@@ -558,8 +462,7 @@ margin-left: 12px; */
 }
 
 .check_box>span {
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 12px;
     /* line-height: 20px; */
@@ -605,8 +508,7 @@ margin-left: 12px; */
     position: absolute;
     left: 26px;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -624,10 +526,6 @@ margin-left: 12px; */
     justify-content: space-between;
     padding-left: 26px;
     padding-right: 24px;
-
-    font-family: 'Ubuntu';
-
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -641,8 +539,7 @@ margin-left: 12px; */
     justify-content: space-between;
     padding-left: 26px;
     padding-right: 24px;
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -661,8 +558,7 @@ margin-left: 12px; */
 
 .total>h3 {
 
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -675,8 +571,7 @@ margin-left: 12px; */
 }
 
 .total>p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -711,8 +606,7 @@ border-radius: 10px;
 }
 
 .thanks_note>h1 {
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -726,8 +620,7 @@ border-radius: 10px;
 }
 
 .thanks_note>p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -741,5 +634,133 @@ border-radius: 10px;
 }
 
 
+/** Footer Section styling Starts **/
+.footer {
+    width: 375px;
+    height: 72px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+   position: absolute;
+   bottom: 0;
+}
 
+/** Next Button **/
+.next-btn {
+    width: 97px;
+    height: 40px;
+    background: #022959;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin-right: 16px;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+/* White */
+
+color: #FFFFFF;
+
+
+}
+.next-btn-text {
+    width: 65px;
+    height: 16px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    /* White */
+    color: #FFFFFF;
+}
+
+/* Go Back Button */
+.go-back-btn {
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    margin-left: 16px;
+    border: none;
+    /*inner text */
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #9699AA;
+}
+/**Confirm button **/
+.confirm-btn{
+    width: 97px;
+height: 40px;
+    /* Purple */
+background: #483EFF;
+border-radius: 4px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border: none;
+margin-right: 16px;
+
+
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+/** Footer section Ends **/
 /** Main Section Ends **/
+
+
+
+
+
+/* Styles for desktop devices */
+
+
+
+
+  @media (max-width: 375px) {
+    .desktop-svg {
+      display: none;
+    }
+  }
+
+  @media (min-width: 376px) {
+    .mobile-svg {
+      display: none;
+    }
+  }
+
+  /* Styles for desktop devices */
+/* Breakpoint: 1024px and above */
+@media (min-width: 1024px) {
+    /* Desktop styles */
+
+    .main-section{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+
+
+
+
+

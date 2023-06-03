@@ -4,7 +4,7 @@ var currentPageIndex = 0;
 //Select the elements
 var pages = document.getElementsByClassName('form-container');
 var thankYouSection = document.getElementById("thank_you");
-var stepListItems = document.getElementsByClassName('step-list');
+var stepListItems = document.getElementsByClassName('indicator_num');
 var nextBtn = document.getElementById("next_btn");
 var backBtn = document.getElementById("back_btn")
 var confirmBtn = document.getElementById("confirm_btn");
