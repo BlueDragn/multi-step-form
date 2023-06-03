@@ -202,7 +202,7 @@ span {}
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
 
 }
 
@@ -367,11 +367,431 @@ input {
 }
 
 
+/** Step_02  Plan selection page Begins **/
+.billing-op-btn {
+    width: 295px;
+    height: 77px;
+    /* Very Light Grey */
+
+    background: #F8F9FF;
+    /* Purple */
+    /* box-sizing: border-box; */
+    border: 1px solid #D6D9E6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 12px;
+
+}
+.billing-op-btn.selected {
+    /* background-color: #ffaf7e;
+    color: #fff; */
+
+    /* Very Light Grey */
+background: #F8F9FF;
+/* Purple */
+
+border: 1px solid #483EFF;
+border-radius: 8px;
+  }
+
+.billing-op-btn>img {
+    margin-left: 10px;
+}
+
+.price-basket {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid rebeccapurple; */
+    gap: 7px;
+}
+
+.price-basket>h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    /* Denim */
+
+    color: #022959;
+}
+
+.price-basket>p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* Grey */
+
+    color: #9699AA;
+
+}
+
+/** Toggle button **/
+.toggle-btn-main {
+    width: 295px;
+    height: 48px;
+    /* Very Light Grey */
+    background: #F8F9FF;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+    /*position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.toggle-btn {
+    width: 183px;
+    height: 21px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/** toggle switch **/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    /* width: 60px;
+    height: 34px; */
+    width: 38px;
+    height: 21px;
+    /* border: 1px solid black; */
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    /* background-color: #2196F3; */
+    /* Denim */
+    background-color: #022959;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #022959;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    /* border-radius: 34px; */
+    border-radius: 10px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/** Step_02  Plan selection page Ends **/
+
+/*** Section_03 ***/
+.order_sum {
+    /* Very Light Grey */
+    background: #F8F9FF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.plan_duration {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-left: 26px;
+    padding-right: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    text-align: right;
+    /* Denim */
+    color: #022959;
+
+}
+
+.plan_duration>a {
+    align-self: flex-end;
+    margin-left: 0;
+    position: absolute;
+    left: 26px;
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    text-decoration-line: underline;
+
+    /* Grey */
+
+    color: #9699AA;
+}
+
+.service_type {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Grey */
+    color: #9699AA;
+}
+
+.storage_type {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    /* Grey */
+    color: #9699AA;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-right: 24px;
+
+}
+
+.total>h3 {
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* Grey */
+
+    color: #9699AA;
+}
+
+.total>p {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    text-align: right;
+
+    /* Purple */
+
+    color: #483EFF;
+
+}
+
+/** Thank you Card **/
+
+.thanks_note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    /* White */
+
+background: #FFFFFF;
+box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+border-radius: 10px;
+}
+
+.thanks_note>img {
+    margin-top: 79px;
+}
+
+.thanks_note>h1 {
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    /* Denim */
+    color: #022959;
+
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.thanks_note>p {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+    /* text-align: center; */
+    /* Grey */
+    padding: 24px;
+    ;
+    color: #9699AA;
+    margin-top: 0;
+}
+
+
+/** Footer Section styling Starts **/
+.footer {
+    width: 375px;
+    height: 72px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+   position: absolute;
+   bottom: 0;
+}
+
+/** Next Button **/
+.next-btn {
+    width: 97px;
+    height: 40px;
+    background: #022959;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin-right: 16px;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+/* White */
+
+color: #FFFFFF;
+
+
+}
+.next-btn-text {
+    width: 65px;
+    height: 16px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    /* White */
+    color: #FFFFFF;
+}
+
+/* Go Back Button */
+.go-back-btn {
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    margin-left: 16px;
+    border: none;
+    /*inner text */
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #9699AA;
+}
+/**Confirm button **/
+.confirm-btn{
+    width: 97px;
+height: 40px;
+    /* Purple */
+background: #483EFF;
+border-radius: 4px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border: none;
+margin-right: 16px;
+
+
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+/** Footer section Ends **/
+/** Main Section Ends **/
+
 
 
 
 /** Media queries**/
 
+/** desktop **/
 @media (min-width: 376px) {
     .main-section {
         flex-direction: row;
@@ -380,12 +800,7 @@ input {
         border-radius: 15px;
 
     }
-    /* .form-section-container {
-        margin-top: 56px;
-        margin-bottom: 172px;
-        margin-right: 100px;
-        margin-left: 100px;
-    } */
+
 
     .desktop-svg {
         display: block;
@@ -397,7 +812,7 @@ input {
 
 }
 
-/* Media query for desktop */
+/* Media query for mobile */
 @media (max-width: 375px) {
 
     .step-list-items {
@@ -407,13 +822,19 @@ input {
     .indicator_info {
         display: none;
     }
-    .form-section-container {
+    .main-section{
+position: relative;
+    }
 
-
+    .form-section {
         border: 1px solid yellow;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
         border-radius: 10px;
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        top: 100;
 
     }
 
